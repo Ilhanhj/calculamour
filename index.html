@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="love.png">
+    <title>Calculamour | Ilhan HJ</title>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  </head>
+  <body>
+    <div class="card ">
+      <!-- START input 1 -->
+      
+      <h1 id="text-1">Apakah dia benar benar jodohmu ?</h1>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+      <p id="text-2">atau jodohmu ternyata jodoh orang lain.</p>
+
+      <h1 class="hasil" id="hasil">
+      </h1>
+      <span id="span"></span>
+      <!-- END input 1 -->
+
+      <!-- START input 2 -->
+      <form name="submit-to-google-sheet">
+        <label for="tinggi">Nama Kamu</label><br />
+        <input type="text" id="yName" pattern="[A-Za-z]{0,15}" placeholder="Isi Nama Kamu disini" oninput="validate()"/>
+        <label for="tinggi">Si Doi</label><br />
+        <input type="text" id="yPartner" pattern="[A-Za-z]{0,15}" placeholder="Isi Nama si Doi disini" oninput="validate()"/>
+      </form>
+
+
+        <h3 id="ex" class="ex"></h3>
+        <p id="desc">
+        </p>
+      <!-- END input 2-->
+
+      <!-- START input 3 -->
+      <div class="button-1 button-2">
+        <button type="button" class="jomblo">Cari Yang Baru
+        </button>
+        <button type="submit" id="hitung" disabled>
+          <lord-icon src="https://cdn.lordicon.com/hqrgkqvs.json" trigger="hover" colors="outline:#fff,primary:#ff428a,secondary:#ebe6ef" style="width: 50px; height: 50px"> </lord-icon>
+        </button>
+        <button type="button" class="jomblo"><a href="single-page.html">Jadi Single</a></button>
+      </div>
+      <div class="credit">
+        <p>Calculamour App | Created by <a href="https://www.instagram.com/hanzuldan/">Ilhan HJ</a></p>
+      </div>
+      </div>
+      <!-- END input 3-->
+    </div>
+    <script src="script.js"></script>
+
+
+  </body>
+</html>

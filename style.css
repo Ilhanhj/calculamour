@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(bg3.jpg) center center fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+.card {
+  width: 355px;
+  padding: 1rem;
+  border-radius: 15px;
+  background: #ffe8e1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  border: 0.5vmin solid #0d0d0d;
+  box-shadow: 0.4rem 0.4rem #0d0d0d;
+  transition: all 500ms;
+}
+.dark-mode {
+  background-color: #0d0d0d;
+  border-radius: 1rem;
+  border: 0.5vmin solid #ff428a;
+  box-shadow: 0.4rem 0.4rem #ff428a;
+  transition: all 500ms;
+}
+h1 {
+  font-size: 45px;
+  text-align: left;
+  color: #ff428a;
+}
+.switch {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  padding: 2px;
+  margin: -70px 270px;
+  position: fixed;
+}
+.switch input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-style: outset;
+  background-color: white;
+  transition: 0.4s;
+  background-color: #0d0d0d;
+}
+.slider::before {
+  content: "☀️";
+  font-size: 22px;
+  line-height: 15px;
+  border-radius: 100%;
+  position: absolute;
+  left: -0.8px;
+  top: 8px;
+  background-color: transparent;
+  transition: 0.4s;
+}
+.switch > input:checked + .slider {
+  background-color: #ff428a;
+}
+.switch > input:checked + .slider:before {
+  content: "🌑";
+  font-size: 22px;
+  line-height: 25px;
+  background-color: transparent;
+  transform: translateY(24px);
+}
+p {
+  margin-bottom: -5px;
+  color: #ff428a;
+}
+
+.hasil {
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 50px 0;
+  line-height: 1.1;
+}
+.hasil h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 20px 0;
+}
+#span {
+  font-size: 20px;
+  color: #ff428a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -55px 0 20px 0;
+}
+#ex {
+  text-align: left;
+  margin: 0 0 5px 0;
+  color: #ff428a;
+}
+#desc {
+  text-align: justify;
+  margin: 0 0 30px 0;
+}
+input {
+  display: grid;
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: 40px;
+  border: 1.5px solid #0d0d0d;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+}
+input:invalid {
+  animation: justshake 0.3s forwards;
+  color: #ff0015;
+}
+label {
+  font-weight: bold;
+  color: #ff428a;
+}
+.button-1 {
+  display: flex;
+  gap: 15px;
+}
+
+#hitung {
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  border: 2px solid #ff428a;
+  box-shadow: 3px 3px #ff428a;
+  transition: all 500ms;
+}
+button {
+  background-color: #ff428a;
+  border-radius: 10px;
+  border: 2px solid #0d0d0d;
+  box-shadow: 3px 3px #0d0d0d;
+  transition: all 500ms;
+}
+
+button {
+  background-color: #ff428a;
+  border-radius: 10px;
+  border: 2px solid #0d0d0d;
+  box-shadow: 3px 3px #0d0d0d;
+  transition: all 500ms;
+}
+.button-dark {
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  border: 2px solid #ff428a;
+  box-shadow: 3px 3px #ff428a;
+  transition: all 500ms;
+}
+.jomblo {
+  width: 40%;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+}
+.jomblo a {
+  color: #fff;
+  text-decoration: none;
+}
+.button-2 {
+  display: flex;
+  border-radius: 10px;
+  height: 50px;
+  gap: 10px;
+}
+.credit p {
+  text-align: center;
+  margin: 15px 0 0 0;
+  font-size: 13px;
+  color: #0d0d0d;
+}
+.credit a {
+  color: #ff428a;
+}
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+#quotes {
+  margin: 0 0 60px 0;
+}
+@keyframes justshake {
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@keyframes shadow {
+  50% {
+    transform: translateX(-50%) scale(0.5);
+    border-color: #f2f2f2;
+  }
+}
+
+@font-face {
+  font-family: "Font Digital";
+  src: url("ArcherBookPro.otf");
+}
+
+.card {
+  font-family: "Font Digital";
+}
+button {
+  font-family: "Font Digital";
+}
